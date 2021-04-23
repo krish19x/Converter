@@ -1,0 +1,10 @@
+D:\Setup\Visual studio projects\converter\converter\bin\Debug\converter.exe.config
+D:\Setup\Visual studio projects\converter\converter\bin\Debug\converter.exe
+D:\Setup\Visual studio projects\converter\converter\bin\Debug\converter.pdb
+D:\Setup\Visual studio projects\converter\converter\obj\Debug\converter.csprojAssemblyReference.cache
+D:\Setup\Visual studio projects\converter\converter\obj\Debug\converter.Form1.resources
+D:\Setup\Visual studio projects\converter\converter\obj\Debug\converter.Properties.Resources.resources
+D:\Setup\Visual studio projects\converter\converter\obj\Debug\converter.csproj.GenerateResource.cache
+D:\Setup\Visual studio projects\converter\converter\obj\Debug\converter.csproj.CoreCompileInputs.cache
+D:\Setup\Visual studio projects\converter\converter\obj\Debug\converter.exe
+D:\Setup\Visual studio projects\converter\converter\obj\Debug\converter.pdb
