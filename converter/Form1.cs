@@ -30,7 +30,7 @@ namespace converter
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
-            if (mainBox.SelectedItem == "Mass")
+            if (mainBox.SelectedItem.Equals("Mass"))
             {
                 convertfrombox.Items.Clear();
                 convertfrombox.Items.AddRange(new string[] { "kilogram","gram", "milligram","tonne", "pound","ounce" });
@@ -39,7 +39,7 @@ namespace converter
                 convertfrombox.SelectedItem = "gram";
                 converttobox.SelectedItem = "kilogram";
             }
-            if (mainBox.SelectedItem == "Length")
+            if (mainBox.SelectedItem.Equals("Length"))
             {
                 convertfrombox.Items.Clear(); 
                 convertfrombox.Items.AddRange(new string[] { "meter","centimeter","kilometer","inch","mile","yards" });
@@ -48,7 +48,7 @@ namespace converter
                 convertfrombox.SelectedItem = "meter";
                 converttobox.SelectedItem = "kilometer";
             }
-            if(mainBox.SelectedItem == "Temperature")
+            if(mainBox.SelectedItem.Equals("Temperature"))
             {
                 convertfrombox.Items.Clear();
                 convertfrombox.Items.AddRange(new string[] { "celsius", "fahrenheit","kelvin" });
@@ -566,22 +566,6 @@ namespace converter
             resultbox.Text = Math.Round(j,4).ToString();
         }
 
-        public void speed()
-        {
-            double n = 0;
-            double j = 0;
-            if (insertvaluebox.Text == null || insertvaluebox.Text == "")
-            {
-                n = 0;
-                insertvaluebox.Text = n.ToString();
-                n = Convert.ToDouble(insertvaluebox.Text);
-            }
-            n = Convert.ToDouble(insertvaluebox.Text);
-            string valCFB = convertfrombox.SelectedItem.ToString();
-            string valCTB = converttobox.SelectedItem.ToString();
-
-        }
-
         public void temperature()
         {
             double n = 0;
@@ -671,15 +655,15 @@ namespace converter
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (mainBox.SelectedItem == "Length")
+            if (mainBox.SelectedItem.Equals("Length"))
             {
                 Length();
             }
-            if (mainBox.SelectedItem == "Mass")
+            if (mainBox.SelectedItem.Equals("Mass"))
             {
                 Mass();
             }
-            if (mainBox.SelectedItem == "Temperature")
+            if (mainBox.SelectedItem.Equals("Temperature"))
             {
                 temperature();
             }
@@ -698,15 +682,15 @@ namespace converter
 
         private void converttobox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (mainBox.SelectedItem == "Length")
+            if (mainBox.SelectedItem.Equals("Length"))
             {
                 Length();
             }
-            if (mainBox.SelectedItem == "Mass")
+            if (mainBox.SelectedItem.Equals("Mass"))
             {
                 Mass();
             }
-            if (mainBox.SelectedItem == "Temperature")
+            if (mainBox.SelectedItem.Equals("Temperature"))
             {
                 temperature();
             }
